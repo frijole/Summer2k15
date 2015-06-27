@@ -14,6 +14,17 @@
 		3C00B4D51B3450BE00D058B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C00B4D41B3450BE00D058B2 /* Images.xcassets */; };
 		3C00B4D81B3450BE00D058B2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C00B4D61B3450BE00D058B2 /* LaunchScreen.xib */; };
 		3C00B4E41B3450BE00D058B2 /* Summer2k15Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00B4E31B3450BE00D058B2 /* Summer2k15Tests.m */; };
+		3C00B4F81B3450CB00D058B2 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00B4F71B3450CB00D058B2 /* InterfaceController.m */; };
+		3C00B4FB1B3450CB00D058B2 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00B4FA1B3450CB00D058B2 /* NotificationController.m */; };
+		3C00B4FE1B3450CB00D058B2 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00B4FD1B3450CB00D058B2 /* GlanceController.m */; };
+		3C00B5001B3450CB00D058B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C00B4FF1B3450CB00D058B2 /* Images.xcassets */; };
+		3C00B5041B3450CB00D058B2 /* Summer2k15 WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 3C00B5031B3450CB00D058B2 /* Summer2k15 WatchKit App.app */; };
+		3C00B50C1B3450CB00D058B2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C00B50A1B3450CB00D058B2 /* Interface.storyboard */; };
+		3C00B50E1B3450CB00D058B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C00B50D1B3450CB00D058B2 /* Images.xcassets */; };
+		3C00B5111B3450CB00D058B2 /* Summer2k15 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3C00B4F11B3450CB00D058B2 /* Summer2k15 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3C00B51B1B34543600D058B2 /* events.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C00B51A1B34543600D058B2 /* events.plist */; };
+		3C00B51E1B34576A00D058B2 /* EventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00B51D1B34576A00D058B2 /* EventManager.m */; };
+		3C00B5211B345C7C00D058B2 /* EventObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00B5201B345C7C00D058B2 /* EventObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +35,35 @@
 			remoteGlobalIDString = 3C00B4C31B3450BE00D058B2;
 			remoteInfo = Summer2k15;
 		};
+		3C00B5051B3450CB00D058B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C00B4BC1B3450BE00D058B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C00B5021B3450CB00D058B2;
+			remoteInfo = "Summer2k15 WatchKit App";
+		};
+		3C00B50F1B3450CB00D058B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C00B4BC1B3450BE00D058B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C00B4F01B3450CB00D058B2;
+			remoteInfo = "Summer2k15 WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3C00B5181B3450CB00D058B2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3C00B5111B3450CB00D058B2 /* Summer2k15 WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3C00B4C41B3450BE00D058B2 /* Summer2k15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Summer2k15.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +79,25 @@
 		3C00B4DD1B3450BE00D058B2 /* Summer2k15Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Summer2k15Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C00B4E21B3450BE00D058B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C00B4E31B3450BE00D058B2 /* Summer2k15Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Summer2k15Tests.m; sourceTree = "<group>"; };
+		3C00B4F11B3450CB00D058B2 /* Summer2k15 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Summer2k15 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C00B4F41B3450CB00D058B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C00B4F51B3450CB00D058B2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		3C00B4F61B3450CB00D058B2 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		3C00B4F71B3450CB00D058B2 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		3C00B4F91B3450CB00D058B2 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		3C00B4FA1B3450CB00D058B2 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		3C00B4FC1B3450CB00D058B2 /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		3C00B4FD1B3450CB00D058B2 /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		3C00B4FF1B3450CB00D058B2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3C00B5031B3450CB00D058B2 /* Summer2k15 WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Summer2k15 WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C00B5091B3450CB00D058B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C00B50B1B3450CB00D058B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3C00B50D1B3450CB00D058B2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3C00B51A1B34543600D058B2 /* events.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = events.plist; sourceTree = "<group>"; };
+		3C00B51C1B34576A00D058B2 /* EventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventManager.h; sourceTree = "<group>"; };
+		3C00B51D1B34576A00D058B2 /* EventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventManager.m; sourceTree = "<group>"; };
+		3C00B51F1B345C7C00D058B2 /* EventObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventObject.h; sourceTree = "<group>"; };
+		3C00B5201B345C7C00D058B2 /* EventObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +115,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3C00B4EE1B3450CB00D058B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		3C00B4BB1B3450BE00D058B2 = {
 			isa = PBXGroup;
 			children = (
+				3C00B5191B3453F200D058B2 /* Data and Resouces */,
 				3C00B4C61B3450BE00D058B2 /* Summer2k15 */,
 				3C00B4E01B3450BE00D058B2 /* Summer2k15Tests */,
+				3C00B5071B3450CB00D058B2 /* Summer2k15 WatchKit App */,
+				3C00B4F21B3450CB00D058B2 /* Summer2k15 WatchKit Extension */,
 				3C00B4C51B3450BE00D058B2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +142,8 @@
 			children = (
 				3C00B4C41B3450BE00D058B2 /* Summer2k15.app */,
 				3C00B4DD1B3450BE00D058B2 /* Summer2k15Tests.xctest */,
+				3C00B4F11B3450CB00D058B2 /* Summer2k15 WatchKit Extension.appex */,
+				3C00B5031B3450CB00D058B2 /* Summer2k15 WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,8 +156,8 @@
 				3C00B4CE1B3450BE00D058B2 /* ViewController.h */,
 				3C00B4CF1B3450BE00D058B2 /* ViewController.m */,
 				3C00B4D11B3450BE00D058B2 /* Main.storyboard */,
-				3C00B4D41B3450BE00D058B2 /* Images.xcassets */,
 				3C00B4D61B3450BE00D058B2 /* LaunchScreen.xib */,
+				3C00B4D41B3450BE00D058B2 /* Images.xcassets */,
 				3C00B4C71B3450BE00D058B2 /* Supporting Files */,
 			);
 			path = Summer2k15;
@@ -119,6 +189,61 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3C00B4F21B3450CB00D058B2 /* Summer2k15 WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3C00B4F61B3450CB00D058B2 /* InterfaceController.h */,
+				3C00B4F71B3450CB00D058B2 /* InterfaceController.m */,
+				3C00B4F91B3450CB00D058B2 /* NotificationController.h */,
+				3C00B4FA1B3450CB00D058B2 /* NotificationController.m */,
+				3C00B4FC1B3450CB00D058B2 /* GlanceController.h */,
+				3C00B4FD1B3450CB00D058B2 /* GlanceController.m */,
+				3C00B4FF1B3450CB00D058B2 /* Images.xcassets */,
+				3C00B4F31B3450CB00D058B2 /* Supporting Files */,
+			);
+			path = "Summer2k15 WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		3C00B4F31B3450CB00D058B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C00B4F41B3450CB00D058B2 /* Info.plist */,
+				3C00B4F51B3450CB00D058B2 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C00B5071B3450CB00D058B2 /* Summer2k15 WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3C00B50A1B3450CB00D058B2 /* Interface.storyboard */,
+				3C00B50D1B3450CB00D058B2 /* Images.xcassets */,
+				3C00B5081B3450CB00D058B2 /* Supporting Files */,
+			);
+			path = "Summer2k15 WatchKit App";
+			sourceTree = "<group>";
+		};
+		3C00B5081B3450CB00D058B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C00B5091B3450CB00D058B2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C00B5191B3453F200D058B2 /* Data and Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				3C00B51A1B34543600D058B2 /* events.plist */,
+				3C00B51C1B34576A00D058B2 /* EventManager.h */,
+				3C00B51D1B34576A00D058B2 /* EventManager.m */,
+				3C00B51F1B345C7C00D058B2 /* EventObject.h */,
+				3C00B5201B345C7C00D058B2 /* EventObject.m */,
+			);
+			name = "Data and Resouces";
+			path = Shared;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +254,12 @@
 				3C00B4C01B3450BE00D058B2 /* Sources */,
 				3C00B4C11B3450BE00D058B2 /* Frameworks */,
 				3C00B4C21B3450BE00D058B2 /* Resources */,
+				3C00B5181B3450CB00D058B2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3C00B5101B3450CB00D058B2 /* PBXTargetDependency */,
 			);
 			name = Summer2k15;
 			productName = Summer2k15;
@@ -157,6 +284,39 @@
 			productReference = 3C00B4DD1B3450BE00D058B2 /* Summer2k15Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		3C00B4F01B3450CB00D058B2 /* Summer2k15 WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C00B5151B3450CB00D058B2 /* Build configuration list for PBXNativeTarget "Summer2k15 WatchKit Extension" */;
+			buildPhases = (
+				3C00B4ED1B3450CB00D058B2 /* Sources */,
+				3C00B4EE1B3450CB00D058B2 /* Frameworks */,
+				3C00B4EF1B3450CB00D058B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C00B5061B3450CB00D058B2 /* PBXTargetDependency */,
+			);
+			name = "Summer2k15 WatchKit Extension";
+			productName = "Summer2k15 WatchKit Extension";
+			productReference = 3C00B4F11B3450CB00D058B2 /* Summer2k15 WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		3C00B5021B3450CB00D058B2 /* Summer2k15 WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C00B5121B3450CB00D058B2 /* Build configuration list for PBXNativeTarget "Summer2k15 WatchKit App" */;
+			buildPhases = (
+				3C00B5011B3450CB00D058B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Summer2k15 WatchKit App";
+			productName = "Summer2k15 WatchKit App";
+			productReference = 3C00B5031B3450CB00D058B2 /* Summer2k15 WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +328,19 @@
 				TargetAttributes = {
 					3C00B4C31B3450BE00D058B2 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = W27P2Y376L;
 					};
 					3C00B4DC1B3450BE00D058B2 = {
 						CreatedOnToolsVersion = 6.3.2;
 						TestTargetID = 3C00B4C31B3450BE00D058B2;
+					};
+					3C00B4F01B3450CB00D058B2 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = W27P2Y376L;
+					};
+					3C00B5021B3450CB00D058B2 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = W27P2Y376L;
 					};
 				};
 			};
@@ -190,6 +359,8 @@
 			targets = (
 				3C00B4C31B3450BE00D058B2 /* Summer2k15 */,
 				3C00B4DC1B3450BE00D058B2 /* Summer2k15Tests */,
+				3C00B4F01B3450CB00D058B2 /* Summer2k15 WatchKit Extension */,
+				3C00B5021B3450CB00D058B2 /* Summer2k15 WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +373,7 @@
 				3C00B4D31B3450BE00D058B2 /* Main.storyboard in Resources */,
 				3C00B4D81B3450BE00D058B2 /* LaunchScreen.xib in Resources */,
 				3C00B4D51B3450BE00D058B2 /* Images.xcassets in Resources */,
+				3C00B51B1B34543600D058B2 /* events.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +381,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C00B4EF1B3450CB00D058B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C00B5041B3450CB00D058B2 /* Summer2k15 WatchKit App.app in Resources */,
+				3C00B5001B3450CB00D058B2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C00B5011B3450CB00D058B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C00B50C1B3450CB00D058B2 /* Interface.storyboard in Resources */,
+				3C00B50E1B3450CB00D058B2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +411,9 @@
 			files = (
 				3C00B4D01B3450BE00D058B2 /* ViewController.m in Sources */,
 				3C00B4CD1B3450BE00D058B2 /* AppDelegate.m in Sources */,
+				3C00B51E1B34576A00D058B2 /* EventManager.m in Sources */,
 				3C00B4CA1B3450BE00D058B2 /* main.m in Sources */,
+				3C00B5211B345C7C00D058B2 /* EventObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +425,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3C00B4ED1B3450CB00D058B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C00B4FB1B3450CB00D058B2 /* NotificationController.m in Sources */,
+				3C00B4F81B3450CB00D058B2 /* InterfaceController.m in Sources */,
+				3C00B4FE1B3450CB00D058B2 /* GlanceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +442,16 @@
 			isa = PBXTargetDependency;
 			target = 3C00B4C31B3450BE00D058B2 /* Summer2k15 */;
 			targetProxy = 3C00B4DE1B3450BE00D058B2 /* PBXContainerItemProxy */;
+		};
+		3C00B5061B3450CB00D058B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C00B5021B3450CB00D058B2 /* Summer2k15 WatchKit App */;
+			targetProxy = 3C00B5051B3450CB00D058B2 /* PBXContainerItemProxy */;
+		};
+		3C00B5101B3450CB00D058B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C00B4F01B3450CB00D058B2 /* Summer2k15 WatchKit Extension */;
+			targetProxy = 3C00B50F1B3450CB00D058B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -258,6 +470,14 @@
 				3C00B4D71B3450BE00D058B2 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		3C00B50A1B3450CB00D058B2 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C00B50B1B3450CB00D058B2 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -347,6 +567,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Summer2k15/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +578,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Summer2k15/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -397,6 +619,66 @@
 			};
 			name = Release;
 		};
+		3C00B5131B3450CB00D058B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Summer2k15_WatchKit_Extension;
+				INFOPLIST_FILE = "Summer2k15 WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		3C00B5141B3450CB00D058B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = Summer2k15_WatchKit_Extension;
+				INFOPLIST_FILE = "Summer2k15 WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		3C00B5161B3450CB00D058B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Summer2k15 WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3C00B5171B3450CB00D058B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Summer2k15 WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -416,6 +698,7 @@
 				3C00B4E91B3450BE00D058B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C00B4EA1B3450BE00D058B2 /* Build configuration list for PBXNativeTarget "Summer2k15Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +707,25 @@
 				3C00B4EC1B3450BE00D058B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C00B5121B3450CB00D058B2 /* Build configuration list for PBXNativeTarget "Summer2k15 WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C00B5131B3450CB00D058B2 /* Debug */,
+				3C00B5141B3450CB00D058B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C00B5151B3450CB00D058B2 /* Build configuration list for PBXNativeTarget "Summer2k15 WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C00B5161B3450CB00D058B2 /* Debug */,
+				3C00B5171B3450CB00D058B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

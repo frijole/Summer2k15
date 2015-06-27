@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  EventManager.h
 //  Summer2k15
 //
 //  Created by Ian Meyer on 6/19/15.
@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EventObject.h"
 
-@interface ViewController : UITableViewController
+@interface EventManager : NSObject
 
++ (EventManager *)defaultManager;
+- (NSArray *)events;
 
 @end
-

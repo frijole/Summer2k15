@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "EventManager.h"
 
 @interface ViewController ()
 
@@ -14,14 +15,17 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [[[EventManager defaultManager] events] count];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *rtnCell = [tableView dequeueReusableCellWithIdentifier:@"eventCell" forIndexPath:indexPath];
+    EventObject *tmpEvent = [[[EventManager defaultManager] events] objectAtIndex:indexPath.row];
+    // TODO: update cell with info
+    [rtnCell.textLabel setText:tmpEvent.formattedDate];
+    [rtnCell.detailTextLabel setText:tmpEvent.details];
+    return rtnCell;
 }
 
 @end
