@@ -13,7 +13,7 @@
                         <group width="1" alignment="left" layout="vertical" spacing="6" id="Xdc-dE-v6U" userLabel="Main Group">
                             <items>
                                 <imageView width="44" height="44" alignment="left" image="717-flag" contentMode="scaleAspectFit" id="fcT-kj-li6" userLabel="Event Icon">
-                                    <color key="tintColor" red="0.094395942989999995" green="0.71855926510000001" blue="0.044731602070000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="tintColor" red="0.82352941180000006" green="0.1450980392" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                 </imageView>
                                 <label width="1" alignment="left" text="This is the name of a thing that is happening" numberOfLines="3" id="LPZ-Le-0ps" userLabel="Title Label">
                                     <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
