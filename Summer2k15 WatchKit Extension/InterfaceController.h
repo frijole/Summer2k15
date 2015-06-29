@@ -11,4 +11,17 @@
 
 @interface InterfaceController : WKInterfaceController
 
+@property (nonatomic, weak) IBOutlet WKInterfaceLabel *titleLabel;
+@property (nonatomic, weak) IBOutlet WKInterfaceLabel *timeLabel;
+@property (nonatomic, weak) IBOutlet WKInterfaceLabel *locationLabel;
+@property (nonatomic, weak) IBOutlet WKInterfaceLabel *detailLabel;
+
+@end
+
+@interface CurrentEventInterfaceController : InterfaceController
+
+@end
+
+@interface NextEventInterfaceController : InterfaceController
+
 @end

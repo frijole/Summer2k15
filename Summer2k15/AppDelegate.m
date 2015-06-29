@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "EventManager.h"
 
 @interface AppDelegate ()
 
@@ -14,6 +15,21 @@
 
 @implementation AppDelegate
 
+- (void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void (^)(NSDictionary *))reply {
+    NSDictionary *replyDictionary = nil;
+    
+    if ( [[userInfo objectForKey:@"request"] isEqual:@"events"] ) {
+        replyDictionary = @{@"events":[NSKeyedArchiver archivedDataWithRootObject:[[EventManager defaultManager] events]]};
+    }
+    else if ( [[userInfo objectForKey:@"request"] isEqual:@"currentEvent"] ) {
+        replyDictionary = @{@"currentEvent":[NSKeyedArchiver archivedDataWithRootObject:[[EventManager defaultManager] currentEvent]]};
+    }
+    else if ( [[userInfo objectForKey:@"request"] isEqual:@"nextEvent"] ) {
+        replyDictionary = @{@"nextEvent":[NSKeyedArchiver archivedDataWithRootObject:[[EventManager defaultManager] nextEvent]]};
+    }
+    
+    reply(replyDictionary);
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.

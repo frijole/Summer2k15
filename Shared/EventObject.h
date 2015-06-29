@@ -18,13 +18,13 @@
 @property (nonatomic, strong) NSDate *startTime;
 @property (nonatomic, strong) NSDate *endTime;
 
-@property (nonatomic, copy) NSString *linkTitle;
-@property (nonatomic, copy) NSURL *linkURL;
+//@property (nonatomic, copy) NSString *linkTitle;
+//@property (nonatomic, copy) NSURL *linkURL;
 
-@property (nonatomic, copy) NSURL *imageURL;
-@property (nonatomic, strong) UIImage *image;
+//@property (nonatomic, copy) NSURL *imageURL;
+//@property (nonatomic, strong) UIImage *image;
 
-@property (nonatomic) CLLocationCoordinate2D location;
+@property (nonatomic) NSString *location;
 
 + (EventObject *)eventFromDictionary:(NSDictionary *)dictionary;
 

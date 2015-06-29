@@ -25,6 +25,9 @@
 		3C00B51B1B34543600D058B2 /* events.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C00B51A1B34543600D058B2 /* events.plist */; };
 		3C00B51E1B34576A00D058B2 /* EventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00B51D1B34576A00D058B2 /* EventManager.m */; };
 		3C00B5211B345C7C00D058B2 /* EventObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00B5201B345C7C00D058B2 /* EventObject.m */; };
+		3C5E97931B41821A00215290 /* EventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00B51D1B34576A00D058B2 /* EventManager.m */; };
+		3C5E97941B41821A00215290 /* EventObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00B5201B345C7C00D058B2 /* EventObject.m */; };
+		3C5E97951B41832000215290 /* events.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C00B51A1B34543600D058B2 /* events.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -399,6 +402,7 @@
 			files = (
 				3C00B50C1B3450CB00D058B2 /* Interface.storyboard in Resources */,
 				3C00B50E1B3450CB00D058B2 /* Images.xcassets in Resources */,
+				3C5E97951B41832000215290 /* events.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +435,9 @@
 			files = (
 				3C00B4FB1B3450CB00D058B2 /* NotificationController.m in Sources */,
 				3C00B4F81B3450CB00D058B2 /* InterfaceController.m in Sources */,
+				3C5E97931B41821A00215290 /* EventManager.m in Sources */,
 				3C00B4FE1B3450CB00D058B2 /* GlanceController.m in Sources */,
+				3C5E97941B41821A00215290 /* EventObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,10 @@ static EventManager *_defaultManager = nil;
 
 @property (nonatomic, strong) NSArray *events;
 
+// current event cache
+@property (nonatomic, strong) EventObject *currentEvent;
+@property (nonatomic, strong) EventObject *nextEvent;
+
 @end
 
 @implementation EventManager
@@ -46,5 +50,38 @@ static EventManager *_defaultManager = nil;
     
     return _events;
 }
+
+- (EventObject *)currentEvent {
+    // if we dont' have one, or if its not today...
+    if ( !_currentEvent || ![[NSCalendar currentCalendar] isDateInToday:_currentEvent.startTime] ) {
+        // find event that is today
+        NSPredicate *tmpTodayPredicate = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
+            return ( [evaluatedObject respondsToSelector:@selector(startTime)] && [[NSCalendar currentCalendar] isDateInToday:[(EventObject *)evaluatedObject startTime]] );
+        }];
+        NSArray *tmpEventsToday = [self.events filteredArrayUsingPredicate:tmpTodayPredicate];
+        _currentEvent = tmpEventsToday.firstObject;
+
+        // clear the nextevent cache, too
+        [self setNextEvent:nil];
+    }
+    
+    return _currentEvent;
+}
+
+- (EventObject *)nextEvent {
+    if ( !_nextEvent ) {
+        // find event after the currentEvent
+        EventObject *tmpCurrentEvent = [self currentEvent];
+        if ( tmpCurrentEvent && tmpCurrentEvent != self.events.lastObject ) {
+            // we have a current event, and its not the last one. find the next one
+            NSInteger tmpCurrentEventIndex = [self.events indexOfObject:tmpCurrentEvent];
+            _nextEvent = [self.events objectAtIndex:tmpCurrentEventIndex+1];
+        }
+    }
+    
+    return _nextEvent;
+}
+
+
 
 @end

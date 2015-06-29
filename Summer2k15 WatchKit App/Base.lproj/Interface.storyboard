@@ -8,49 +8,47 @@
         <!--Today-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller title="Today" id="AgC-eL-Hgc" customClass="InterfaceController">
+                <controller title="Today" id="AgC-eL-Hgc" customClass="CurrentEventInterfaceController">
                     <items>
                         <group width="1" alignment="left" layout="vertical" spacing="6" id="Xdc-dE-v6U" userLabel="Main Group">
                             <items>
                                 <imageView width="44" height="44" alignment="left" image="717-flag" contentMode="scaleAspectFit" id="fcT-kj-li6" userLabel="Event Icon">
-                                    <color key="tintColor" red="0.82352941180000006" green="0.1450980392" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="tintColor" red="0.15237070620059967" green="1" blue="0.025026898831129074" alpha="1" colorSpace="calibratedRGB"/>
                                 </imageView>
-                                <label width="1" alignment="left" text="This is the name of a thing that is happening" numberOfLines="3" id="LPZ-Le-0ps" userLabel="Title Label">
+                                <label width="1" alignment="left" text="Jason Moran's Fats Waller Dance Party / Butler, Bernstein &amp; The Hot 9" numberOfLines="0" id="LPZ-Le-0ps" userLabel="Title Label">
                                     <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                 </label>
-                                <group width="1" height="44" alignment="left" radius="8" id="Uyw-gN-SNp" userLabel="Time Group">
+                                <group width="1" alignment="left" spacing="8" id="Uyw-gN-SNp" userLabel="Time Group">
                                     <items>
-                                        <imageView width="26" height="16" alignment="left" verticalAlignment="center" image="728-clock" contentMode="scaleAspectFit" id="mvL-yg-HEd">
-                                            <color key="tintColor" red="0.82352941180000006" green="0.1450980392" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <imageView width="16" height="16" alignment="left" verticalAlignment="center" image="728-clock" contentMode="scaleAspectFit" id="mvL-yg-HEd">
+                                            <color key="tintColor" red="0.060472823679447174" green="0.50868892669677734" blue="0.99846053123474121" alpha="1" colorSpace="calibratedRGB"/>
                                         </imageView>
-                                        <label alignment="left" verticalAlignment="center" numberOfLines="2" id="Ot8-Xd-54H">
-                                            <string key="text">6:00 pm to 
-10:00 pm</string>
+                                        <label alignment="left" verticalAlignment="center" text="7:30 pm" numberOfLines="2" id="Ot8-Xd-54H">
                                             <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
                                         </label>
                                     </items>
-                                    <color key="backgroundColor" red="0.19466812908649445" green="0.19465586543083191" blue="0.19466301798820496" alpha="1" colorSpace="calibratedRGB"/>
-                                    <edgeInsets key="margins" left="2" right="0.0" top="0.0" bottom="0.0"/>
                                 </group>
-                                <group width="1" height="44" alignment="left" radius="8" id="90b-F7-7jP" userLabel="Location Group">
+                                <group width="1" alignment="left" spacing="8" id="90b-F7-7jP" userLabel="Location Group">
                                     <items>
-                                        <imageView width="26" height="16" alignment="left" verticalAlignment="center" image="701-location" contentMode="scaleAspectFit" id="BM6-Em-1R4">
-                                            <color key="tintColor" red="0.094395942989999995" green="0.71855926510000001" blue="0.044731602070000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <imageView width="16" height="16" alignment="left" verticalAlignment="center" image="701-location" contentMode="scaleAspectFit" id="FP3-Cx-mho" userLabel="Location Icon">
+                                            <color key="tintColor" red="0.69416391850000003" green="0.0" blue="0.99868929390000005" alpha="1" colorSpace="calibratedRGB"/>
                                         </imageView>
-                                        <label alignment="left" verticalAlignment="center" text="Prospect Park" numberOfLines="2" id="mLQ-VQ-u0T">
+                                        <label alignment="left" verticalAlignment="center" text="Prospect Park Bandshell" numberOfLines="2" id="HgL-HV-1cb" userLabel="Location Label">
                                             <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
                                         </label>
                                     </items>
-                                    <color key="backgroundColor" red="0.19466812908649445" green="0.19465586543083191" blue="0.19466301798820496" alpha="1" colorSpace="calibratedRGB"/>
-                                    <edgeInsets key="margins" left="2" right="0.0" top="0.0" bottom="0.0"/>
                                 </group>
-                                <label width="1" alignment="left" text="These are some details about the event, such as what it is about or whom it features." numberOfLines="0" id="wK0-lc-eBG">
+                                <label width="1" alignment="left" text="These are some details about the event, such as what it is about or whom it features." numberOfLines="0" id="wK0-lc-eBG" userLabel="Event Detail Label">
                                     <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
                                 </label>
                                 <group width="1" alignment="left" id="hNH-Sc-X3z" userLabel="Button Group">
                                     <items>
-                                        <button width="0.50000000000000011" alignment="left" title="👎" id="cGb-nu-OvY"/>
-                                        <button width="0.50000000000000011" alignment="left" title="👍" id="J57-iF-0eK"/>
+                                        <button width="0.50000000000000011" alignment="left" title="👎" id="cGb-nu-OvY" userLabel="Thumbs Down Button">
+                                            <fontDescription key="font" type="system" pointSize="16"/>
+                                        </button>
+                                        <button width="0.50000000000000011" alignment="left" title="👍" id="J57-iF-0eK" userLabel="Thumbs Up Button">
+                                            <fontDescription key="font" type="system" pointSize="16"/>
+                                        </button>
                                     </items>
                                 </group>
                             </items>
@@ -58,12 +56,15 @@
                     </items>
                     <menu key="menu" id="8G8-mP-VCO">
                         <items>
-                            <menuItem title="Accept" icon="accept" id="0Az-iS-D7b"/>
-                            <menuItem title="Decline" icon="decline" id="Rks-Bc-j15"/>
+                            <menuItem title="Share" icon="share" id="Rks-Bc-j15"/>
                         </items>
                     </menu>
                     <connections>
-                        <segue destination="yAp-En-wM3" kind="relationship" relationship="nextPage" id="4si-ho-Y3G"/>
+                        <outlet property="detailLabel" destination="wK0-lc-eBG" id="DjK-Lp-IX9"/>
+                        <outlet property="locationLabel" destination="HgL-HV-1cb" id="qeZ-nO-XkZ"/>
+                        <outlet property="timeLabel" destination="Ot8-Xd-54H" id="wds-EM-28x"/>
+                        <outlet property="titleLabel" destination="LPZ-Le-0ps" id="8dI-xe-aEE"/>
+                        <segue destination="tti-2N-9rF" kind="relationship" relationship="nextPage" id="Jvs-Jl-RQm"/>
                     </connections>
                 </controller>
             </objects>
@@ -77,7 +78,7 @@
                         <group alignment="left" layout="vertical" id="t8f-Gd-c4y">
                             <items>
                                 <imageView width="48" height="1" alignment="left" image="717-flag" contentMode="scaleAspectFit" id="4Rv-D7-qcr">
-                                    <color key="tintColor" red="0.78760129209999996" green="1" blue="0.1014917642" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="tintColor" red="0.15237070620000001" green="1" blue="0.025026898830000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </imageView>
                             </items>
                         </group>
@@ -93,17 +94,21 @@
                                 <group width="1" alignment="left" verticalAlignment="bottom" id="ITZ-ns-rpt">
                                     <items>
                                         <imageView width="24" height="16" alignment="left" verticalAlignment="center" image="728-clock" contentMode="scaleAspectFit" id="Z2B-Gh-7aS">
-                                            <color key="tintColor" red="0.82352941180000006" green="0.1450980392" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.060472823680000003" green="0.50868892669999999" blue="0.9984605312" alpha="1" colorSpace="calibratedRGB"/>
                                         </imageView>
-                                        <label alignment="left" verticalAlignment="center" text="6:00 pm" id="w74-t0-SRO"/>
+                                        <label alignment="left" verticalAlignment="center" text="6:00 pm" id="w74-t0-SRO">
+                                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                        </label>
                                     </items>
                                 </group>
                                 <group width="1" alignment="left" verticalAlignment="bottom" id="Nzc-qd-48q">
                                     <items>
                                         <imageView width="24" height="16" alignment="left" verticalAlignment="center" image="701-location" contentMode="scaleAspectFit" id="bmn-mq-bLs">
-                                            <color key="tintColor" red="0.094395942989999995" green="0.71855926510000001" blue="0.044731602070000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.82352941180000006" green="0.1450980392" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                         </imageView>
-                                        <label alignment="left" verticalAlignment="center" text="Prospect Park" id="cXY-0j-eCB"/>
+                                        <label alignment="left" verticalAlignment="center" text="Prospect Park" id="cXY-0j-eCB">
+                                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                        </label>
                                     </items>
                                 </group>
                             </items>
@@ -127,7 +132,7 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="235" y="937"/>
+            <point key="canvasLocation" x="235" y="589"/>
         </scene>
         <!--More...-->
         <scene sceneID="dyV-qS-n54">
@@ -145,69 +150,74 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="856" y="57"/>
+            <point key="canvasLocation" x="728" y="154"/>
         </scene>
         <!--Tomorrow-->
-        <scene sceneID="Ue8-Wn-ciu">
+        <scene sceneID="D5y-ya-LBC">
             <objects>
-                <controller title="Tomorrow" id="yAp-En-wM3" customClass="InterfaceController">
+                <controller title="Tomorrow" id="tti-2N-9rF" customClass="NextEventInterfaceController">
                     <items>
-                        <group width="1" alignment="left" layout="vertical" spacing="6" id="voo-IE-beT" userLabel="Main Group">
+                        <group width="1" alignment="left" layout="vertical" spacing="6" id="hoG-Nz-yB1" userLabel="Main Group">
                             <items>
-                                <imageView width="44" height="44" alignment="left" image="717-flag" contentMode="scaleAspectFit" id="8m7-Bn-69r" userLabel="Event Icon">
-                                    <color key="tintColor" red="0.094395942989999995" green="0.71855926510000001" blue="0.044731602070000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <imageView width="44" height="44" alignment="left" image="717-flag" contentMode="scaleAspectFit" id="0ZJ-5T-0kk" userLabel="Event Icon">
+                                    <color key="tintColor" red="0.98856896159999996" green="0.36166954039999999" blue="0.045768413690000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </imageView>
-                                <label width="1" alignment="left" text="Another day, another event." numberOfLines="3" id="zvA-h2-ueo" userLabel="Title Label">
+                                <label width="1" alignment="left" text="STooPS Festival" numberOfLines="0" id="bBq-QO-2Ge" userLabel="Title Label">
                                     <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                 </label>
-                                <group width="1" height="44" alignment="left" radius="8" id="aXz-gg-qko" userLabel="Time Group">
+                                <group width="1" alignment="left" radius="6" spacing="8" id="V6o-qI-USj" userLabel="Time Group">
                                     <items>
-                                        <imageView width="26" height="16" alignment="left" verticalAlignment="center" image="728-clock" contentMode="scaleAspectFit" id="Zs5-aM-5WB">
-                                            <color key="tintColor" red="0.82352941180000006" green="0.1450980392" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <imageView width="16" height="16" alignment="left" verticalAlignment="center" image="728-clock" contentMode="scaleAspectFit" id="UmH-gb-Sxv">
+                                            <color key="tintColor" red="0.060472823680000003" green="0.50868892669999999" blue="0.9984605312" alpha="1" colorSpace="calibratedRGB"/>
                                         </imageView>
-                                        <label alignment="left" verticalAlignment="center" text="10:00 am" numberOfLines="2" id="eiL-B6-qRt">
+                                        <label alignment="left" verticalAlignment="center" text="All Day" numberOfLines="2" id="DMi-cb-6MA">
                                             <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
                                         </label>
                                     </items>
-                                    <color key="backgroundColor" red="0.1946681291" green="0.19465586539999999" blue="0.19466301799999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    <edgeInsets key="margins" left="2" right="0.0" top="0.0" bottom="0.0"/>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                                 </group>
-                                <group width="1" height="44" alignment="left" radius="8" id="CYM-SX-pf6" userLabel="Location Group">
+                                <group width="1" alignment="left" radius="6" spacing="8" id="OXz-2W-Q7o" userLabel="Location Group">
                                     <items>
-                                        <imageView width="26" height="16" alignment="left" verticalAlignment="center" image="701-location" contentMode="scaleAspectFit" id="S26-hJ-NcE">
-                                            <color key="tintColor" red="0.094395942989999995" green="0.71855926510000001" blue="0.044731602070000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <imageView width="16" height="16" alignment="left" verticalAlignment="center" image="701-location" contentMode="scaleAspectFit" id="hrV-7F-uBa" userLabel="Location Icon">
+                                            <color key="tintColor" red="0.69416391850000003" green="0.0" blue="0.99868929390000005" alpha="1" colorSpace="calibratedRGB"/>
                                         </imageView>
-                                        <label alignment="left" verticalAlignment="center" text="Coney Island Beach" numberOfLines="2" id="dJb-Cv-kbv">
+                                        <label alignment="left" verticalAlignment="center" text="Bed-Stuy" numberOfLines="2" id="gjB-ar-6cA" userLabel="Location Label">
                                             <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
                                         </label>
                                     </items>
-                                    <color key="backgroundColor" red="0.1946681291" green="0.19465586539999999" blue="0.19466301799999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    <edgeInsets key="margins" left="2" right="0.0" top="0.0" bottom="0.0"/>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                                 </group>
-                                <label width="1" alignment="left" text="These are some details about the event, such as what it is about or whom it features." numberOfLines="0" id="ZCT-BY-JeG">
+                                <label width="1" alignment="left" text="Pick up a STooPS SightSeer guide with performance times &amp; locations around the neighborhood." numberOfLines="0" id="o45-wJ-255" userLabel="Event Detail Label">
                                     <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
                                 </label>
-                                <group width="1" alignment="left" id="Zmx-wG-7xs" userLabel="Button Group">
+                                <group width="1" alignment="left" id="orl-ck-p9e" userLabel="Button Group">
                                     <items>
-                                        <button width="0.50000000000000011" alignment="left" title="👎" id="z6U-s4-uMf"/>
-                                        <button width="0.50000000000000011" alignment="left" title="👍" id="Wcy-7u-Mx0"/>
+                                        <button width="0.50000000000000011" alignment="left" title="👎" id="waj-rl-mIb" userLabel="Thumbs Down Button">
+                                            <fontDescription key="font" type="system" pointSize="16"/>
+                                        </button>
+                                        <button width="0.50000000000000011" alignment="left" title="👍" id="YfK-wj-GNi" userLabel="Thumbs Up Button">
+                                            <fontDescription key="font" type="system" pointSize="16"/>
+                                        </button>
                                     </items>
                                 </group>
                             </items>
                         </group>
                     </items>
-                    <menu key="menu" id="Pfy-NM-kA7">
+                    <menu key="menu" id="IcJ-z2-cUP">
                         <items>
-                            <menuItem title="Accept" icon="accept" id="gog-In-nBC"/>
-                            <menuItem title="Decline" icon="decline" id="bPy-Ih-qnC"/>
+                            <menuItem title="Share" icon="share" id="so2-SO-gix"/>
                         </items>
                     </menu>
                     <connections>
-                        <segue destination="ffJ-Of-r9V" kind="relationship" relationship="nextPage" id="esF-z1-7nJ"/>
+                        <outlet property="detailLabel" destination="o45-wJ-255" id="zBd-xd-CYb"/>
+                        <outlet property="locationLabel" destination="gjB-ar-6cA" id="HTc-dP-27n"/>
+                        <outlet property="timeLabel" destination="DMi-cb-6MA" id="Uk5-jq-JlD"/>
+                        <outlet property="titleLabel" destination="bBq-QO-2Ge" id="gg1-fo-CVM"/>
+                        <segue destination="ffJ-Of-r9V" kind="relationship" relationship="nextPage" id="PTy-nb-lW1"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="553" y="143.75"/>
+            <point key="canvasLocation" x="488" y="153.25"/>
         </scene>
     </scenes>
 </document>

@@ -12,6 +12,10 @@
 @interface EventManager : NSObject
 
 + (EventManager *)defaultManager;
+
 - (NSArray *)events;
+
+- (EventObject *)currentEvent;
+- (EventObject *)nextEvent;
 
 @end
